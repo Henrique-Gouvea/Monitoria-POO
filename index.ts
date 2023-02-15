@@ -5,8 +5,14 @@ import Water from './Types/Water';
 const charmander = new Pokemon(new Fire(), 'Charmander');
 const sea = new Pokemon(new Water(), 'Sea');
 
-console.log(charmander.name + ' defesa ' + charmander.defense);
-console.log(sea.name + ' attack ' + sea.strength);
+console.log(
+  charmander.name +
+    ' defesa ' +
+    charmander.defense +
+    ' attack ' +
+    charmander.strength
+);
+console.log(sea.name + ' defesa ' + sea.defense + ' attack ' + sea.strength);
 
 sea.attack(charmander);
 
