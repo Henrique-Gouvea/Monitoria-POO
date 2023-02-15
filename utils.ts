@@ -11,4 +11,12 @@ const damageLogic = (damage: number, lifePoints: number): number => {
   return lifePoints;
 };
 
-export default { generateAleatoryNumber1to10, damageLogic };
+const verifyTypeDamage = (
+  typeAttacker: string,
+  typeDamage: Array<string>
+): number => {
+  const verifyDamage = typeDamage.some((type) => type === typeAttacker);
+  return verifyDamage ? 3 : 0;
+};
+
+export default { generateAleatoryNumber1to10, damageLogic, verifyTypeDamage };

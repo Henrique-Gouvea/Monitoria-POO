@@ -8,7 +8,7 @@ export default class Pokemon implements IPokemon {
   private _defense: number;
   private _type: Type;
 
-  constructor(public type: Type) {
+  constructor(public type: Type, public _name: string) {
     this._lifePoints = 100;
     this._strength = utils.generateAleatoryNumber1to10();
     this._defense = utils.generateAleatoryNumber1to10();
@@ -28,11 +28,15 @@ export default class Pokemon implements IPokemon {
   }
 
   get name(): string {
-    return this._type.name;
+    return this._name;
   }
 
   attack(enemy: IPokemon): void {
-    enemy.receiveDamage(this.strength);
+    const effective = utils.verifyTypeDamage(
+      this._type.typeName,
+      enemy.type.weaknesses
+    );
+    enemy.receiveDamage(this.strength + effective);
   }
 
   levelUp(): void {

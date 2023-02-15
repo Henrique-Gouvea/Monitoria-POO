@@ -1,9 +1,7 @@
 export default abstract class Type {
-  constructor(private _name: string) {}
+  constructor() {}
 
-  get name(): string {
-    return this._name;
-  }
+  abstract get typeName(): string;
 
   abstract get strengths(): Array<string>;
 

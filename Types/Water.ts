@@ -1,8 +1,14 @@
 import Type from './Type';
 
 export default class Water extends Type {
-  constructor(name: string) {
-    super(name);
+  private _typeName: string;
+  constructor() {
+    super();
+    this._typeName = 'agua';
+  }
+
+  get typeName(): string {
+    return this._typeName;
   }
 
   get strengths(): Array<string> {
