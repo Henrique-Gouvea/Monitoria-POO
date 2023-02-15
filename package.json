@@ -1,0 +1,25 @@
+{
+  "name": "monitoria-poo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node ./public/index.js",
+    "dev": "tsnd index.ts",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henrique-Gouvea/Monitoria-POO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henrique-Gouvea/Monitoria-POO/issues"
+  },
+  "homepage": "https://github.com/Henrique-Gouvea/Monitoria-POO#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
