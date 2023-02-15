@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node ./public/index.js",
-    "dev": "tsnd index.ts",
     "build": "npx tsc"
   },
   "repository": {
