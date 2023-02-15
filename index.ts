@@ -15,6 +15,7 @@ console.log(
 console.log(sea.name + ' defesa ' + sea.defense + ' attack ' + sea.strength);
 
 sea.attack(charmander);
+charmander.attack(sea);
 
 console.log(charmander.name, charmander.lifePoints);
 console.log(sea.name, sea.lifePoints);

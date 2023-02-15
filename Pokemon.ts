@@ -36,6 +36,7 @@ export default class Pokemon implements IPokemon {
       this._type.typeName,
       enemy.type.weaknesses
     );
+    effective === 3 ? console.log('Ataque super efetivo') : 0;
     enemy.receiveDamage(this.strength + effective);
   }
 
