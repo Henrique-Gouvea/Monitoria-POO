@@ -14,8 +14,14 @@ console.log(
 );
 console.log(sea.name + ' defesa ' + sea.defense + ' attack ' + sea.strength);
 
-sea.attack(charmander);
-charmander.attack(sea);
+while (sea.lifePoints > 0 && charmander.lifePoints > 0) {
+  sea.attack(charmander);
+  charmander.attack(sea);
+}
+
+sea.lifePoints == -1
+  ? console.log(charmander.name + ' venceu')
+  : console.log(sea.name + ' venceu');
 
 console.log(charmander.name, charmander.lifePoints);
 console.log(sea.name, sea.lifePoints);

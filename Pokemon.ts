@@ -10,7 +10,7 @@ export default class Pokemon implements IPokemon {
 
   constructor(public type: Type, public _name: string) {
     this._lifePoints = 100;
-    this._strength = utils.generateAleatoryNumber1to10();
+    this._strength = utils.generateAleatoryNumber1to10() + 10;
     this._defense = utils.generateAleatoryNumber1to10();
     this._type = type;
   }
@@ -36,7 +36,7 @@ export default class Pokemon implements IPokemon {
       this._type.typeName,
       enemy.type.weaknesses
     );
-    effective === 3 ? console.log('Ataque super efetivo') : 0;
+    // effective === 3 ? console.log('Ataque super efetivo') : 0;
     enemy.receiveDamage(this.strength + effective);
   }
 
