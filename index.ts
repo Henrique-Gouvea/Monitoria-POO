@@ -1,30 +1,42 @@
 import Pokemon from './Pokemon';
-import Fire from './Types/Fire';
-import Water from './Types/Water';
+import Fire from './Type/Fire';
+import Water from './Type/Water';
 
-const charmander = new Pokemon(new Fire(), 'Charmander');
-const sea = new Pokemon(new Water(), 'Sea');
+const fogo = new Fire();
+const charmander = new Pokemon(fogo, 'charmander');
 
-console.log(
-  charmander.name +
-    ' defesa ' +
-    charmander.defense +
-    ' attack ' +
-    charmander.strength
-);
-console.log(sea.name + ' defesa ' + sea.defense + ' attack ' + sea.strength);
+const water = new Water();
+const sea = new Pokemon(water, 'sea');
 
-while (sea.lifePoints > 0 && charmander.lifePoints > 0) {
-  sea.attack(charmander);
-  charmander.attack(sea);
-}
+// console.log(charmander.lifePoints);
+// console.log(charmander.defense);
+// console.log(sea.strength);
 
-sea.lifePoints == -1
-  ? console.log(charmander.name + ' venceu')
-  : console.log(sea.name + ' venceu');
+// sea.attack(charmander);
 
-console.log(charmander.name, charmander.lifePoints);
-console.log(sea.name, sea.lifePoints);
+// console.log(charmander.lifePoints);
 
-charmander.type.talk;
-sea.type.talk;
+// console.log(charmander);
+// charmander.levelUp();
+// charmander.levelUp();
+// charmander.levelUp();
+// charmander.levelUp();
+// charmander.levelUp();
+// console.log(charmander);
+
+// while (sea.lifePoints > 0 && charmander.lifePoints > 0) {
+//   sea.attack(charmander);
+//   charmander.attack(sea);
+// }
+
+// sea.lifePoints == -1
+//   ? console.log(charmander.name + ' venceu')
+//   : console.log(sea.name + ' venceu');
+
+const teste = new Water();
+const teste1 = new Pokemon(teste, 'teste');
+
+const teste2 = new Water();
+const teste3 = new Pokemon(teste2, 'teste');
+
+console.log(Water._inst);
