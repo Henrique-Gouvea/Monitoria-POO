@@ -18,4 +18,8 @@ export default class Fire extends Type {
   get weaknesses(): Array<string> {
     return ['agua', 'terrestre', 'pedra'];
   }
+
+  public get talk(): void {
+    return console.log('Eu sou um pokemon do tipo ' + this._typeName);
+  }
 }

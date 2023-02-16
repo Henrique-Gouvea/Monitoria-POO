@@ -25,3 +25,6 @@ sea.lifePoints == -1
 
 console.log(charmander.name, charmander.lifePoints);
 console.log(sea.name, sea.lifePoints);
+
+charmander.type.talk;
+sea.type.talk;

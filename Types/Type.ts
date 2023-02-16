@@ -6,4 +6,8 @@ export default abstract class Type {
   abstract get strengths(): Array<string>;
 
   abstract get weaknesses(): Array<string>;
+
+  public get talk(): void {
+    return console.log('Eu sou um pokemon');
+  }
 }
