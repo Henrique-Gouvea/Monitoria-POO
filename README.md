@@ -1,41 +1,28 @@
+# Pokemon Poo
 
-# Monitoria de POO
+Criar pokemons que contenham informações como: de qual tipo ele é, e tenha objetos e metodos basicos para que consiga fazer uma batalha com outro pokemon.
 
-Um pequeno exemplo em TypeScript de como fazer classes abstratas e interface, utilizando pokemons.
+## Classe pokemon
 
+Deve conter:
 
+Objetos
 
+- Pontos de força
+- Pontos de defesa
 
-#### Classe abstrata
+Metodos
 
-```http
-  Types/Type.ts
+- Ataque
+- Subir lvl (Aumentar vida, força e defesa)
 
-  Classe abstrata para cada tipo de pokemon.
-```
+## Classe abstrata tipo
 
+Deve conter:
 
+Metodos
 
-```http
-  Types/
-
-  Tipos eletrico, fogo, planta ... extendem da classe abstrata Type.ts
-```
-
-
-#### Classe Pokemon
-
-```http
-  Pokemon.ts
-
-  Classe pokemon implementa a interface IPokemon.
-```
-
-
-
-```http
-  interface/IPokemon.ts
-
-  Interface com objetos e metodos.
-```
-
+- Pegar o tipo do pokemon
+- Pegar quais tipos de pokemon tem vantagem sobre ele
+- Pegar quais tipos de pokemon tem desvantagem sobre ele
+- Retornar a fala do pokemon
